@@ -1,42 +1,35 @@
-import Link from 'next/link';
 import ScrollTopButton from "../components/ScrollTopButton";
+import FadeInSection from "../components/FadeInSection";
 
 export default function ResumePage() {
   return (
-    <div className="max-w-screen-lg mx-auto space-y-8 p-6 sm:p-8 md:p-10 bg-gray-50 text-gray-900 rounded-xl shadow-lg">
+    <div className="max-w-screen-lg mx-auto space-y-12 p-6 sm:p-8 md:p-10 bg-gray-50 text-gray-900 rounded-xl shadow-lg">
       {/* Header */}
-      <header className="flex flex-col md:flex-row md:justify-between md:items-center gap-2 border-b border-gray-300 pb-4">
-        <div>
-          <h1 className="text-4xl font-bold">Soroush Osanloo</h1>
-          <p className="text-gray-600">Thornhill, ON</p>
-        </div>
-        <div className="space-y-1 md:text-right">
-          <p className="text-sm">Phone: <a href="tel:+14375566361" className="hover:underline">+1 (437)556-6361</a></p>
-          <p className="text-sm">Email: <a href="mailto:soroush.osanlo@gmail.com" className="hover:underline">soroush.osanlo@gmail.com</a></p>
-          <p className="text-sm">
-            <a href="#" className="hover:underline mr-2">@LinkedIn</a>
-            <a href="#" className="hover:underline">@GitHub</a>
-          </p>
-        </div>
-      </header>
+  <header className="text-center pb-6 border-b border-gray-300">
+    <h1 className="text-4xl font-bold">Soroush Osanlo</h1>
+    <p className="mt-2 text-lg text-gray-600">Passionate about building tools that solve real-world problems.</p>
+  </header>
 
       {/* Professional Summary */}
-      <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-2">
-        <h2 className="text-3xl font-bold mb-4">Professional Summary</h2>
-        <p className="text-base leading-relaxed">
-          Resourceful and adaptable software developer with strengths in full-stack development,
-          problem-solving, and teamwork.
-        </p>
-      </section>
+      <FadeInSection>
+        <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-2">
+          <h2 className="text-3xl font-semibold mb-4">Professional Summary</h2>
+          <p className="text-lg leading-relaxed">
+            Resourceful and adaptable software developer with strengths in full-stack development,
+            problem-solving, and teamwork.
+          </p>
+        </section>
+      </FadeInSection>
 
       {/* Experience */}
-      <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-4">
-        <h2 className="text-3xl font-bold mb-4">Experience</h2>
-        <div className="space-y-6">
-          <div>
-            <h3 className="text-xl font-semibold">SAT Tutor – Webtree Academy, Toronto, ON</h3>
-            <p className="text-sm text-gray-500">June 2023 – September 2023</p>
-            <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+      <FadeInSection>
+        <section className="bg-gray-50 p-6 rounded-lg shadow border border-gray-200 space-y-4">
+          <h2 className="text-3xl font-semibold mb-4">Experience</h2>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold">SAT Tutor – Webtree Academy, Toronto, ON</h3>
+              <p className="text-sm text-gray-500">June 2023 – September 2023</p>
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
               <li>One-on-one SAT tutoring, score improved from 800 to 1300+</li>
               <li>Study plan: time management, anxiety reduction, critical reading</li>
               <li>Targeted SAT grammar/problem-solving lessons</li>
@@ -50,27 +43,31 @@ export default function ResumePage() {
               <li>Helped students get into UofT, TMU, George Brown</li>
               <li>Used PyCharm, Google Classroom, personalized lesson plans</li>
             </ul>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      </FadeInSection>
 
       {/* Education */}
-      <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-2">
-        <h2 className="text-3xl font-bold mb-4">Education</h2>
-        <div>
-          <h3 className="text-xl font-semibold">Seneca Polytechnic – Computer Programming Diploma</h3>
-          <p className="text-sm text-gray-500">Graduated Dec 2024 | GPA: 3.8</p>
-          <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-            <li>Specialized in Java, SQL optimization, and system analysis</li>
-            <li>Built REST APIs, practiced Agile, fixed client-server issues</li>
-          </ul>
-        </div>
-      </section>
+      <FadeInSection>
+        <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-2">
+          <h2 className="text-3xl font-semibold mb-4">Education</h2>
+          <div>
+            <h3 className="text-xl font-semibold">Seneca Polytechnic – Computer Programming Diploma</h3>
+            <p className="text-sm text-gray-500">Graduated Dec 2024 | GPA: 3.8</p>
+            <ul className="list-disc list-inside ml-4 mt-2 space-y-1 text-lg">
+              <li>Specialized in Java, SQL optimization, and system analysis</li>
+              <li>Built REST APIs, practiced Agile, fixed client-server issues</li>
+            </ul>
+          </div>
+        </section>
+      </FadeInSection>
 
       {/* Technical Skills */}
-      <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-4">
-        <h2 className="text-3xl font-bold mb-4">Technical Skills</h2>
-        <div className="space-y-4">
+      <FadeInSection>
+        <section className="bg-gray-50 p-6 rounded-lg shadow border border-gray-200 space-y-4">
+          <h2 className="text-3xl font-semibold mb-4">Technical Skills</h2>
+          <div className="space-y-4">
           <div>
             <h3 className="font-semibold">Languages/Frameworks</h3>
             <div className="flex flex-wrap gap-2 mt-1">
@@ -160,53 +157,51 @@ export default function ResumePage() {
             </div>
           </div>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
 
       {/* Languages */}
-      <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-2">
-        <h2 className="text-3xl font-bold mb-4">Languages</h2>
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-1 gap-x-6 list-disc list-inside ml-4">
+      <FadeInSection>
+        <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-2">
+          <h2 className="text-3xl font-semibold mb-4">Languages</h2>
+          <ul className="grid grid-cols-1 sm:grid-cols-2 gap-y-1 gap-x-6 list-disc list-inside ml-4 text-lg">
           <li>English: Native</li>
           <li>French: Beginner</li>
           <li>Persian: Native</li>
           <li>Italian: Intermediate</li>
           <li>Arabic: Intermediate</li>
-        </ul>
-      </section>
+          </ul>
+        </section>
+      </FadeInSection>
 
       {/* Project Highlights */}
-      <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-4">
-        <h2 className="text-3xl font-bold mb-4">Project Highlights</h2>
-        <div className="space-y-4">
-          <div>
-            <h3 className="text-xl font-semibold">Digital Check Processing (Capstone)</h3>
-            <p className="ml-4">Java + SQL, fraud checks, REST API, testing, CI/CD</p>
-          </div>
+      <FadeInSection>
+        <section className="bg-gray-50 p-6 rounded-lg shadow border border-gray-200 space-y-4">
+          <h2 className="text-3xl font-semibold mb-4">Project Highlights</h2>
+          <div className="space-y-4">
+            <div>
+              <h3 className="text-xl font-semibold">Digital Check Processing (Capstone)</h3>
+              <p className="ml-4">Java + SQL, fraud checks, REST API, testing, CI/CD</p>
+            </div>
           <div>
             <h3 className="text-xl font-semibold">System Health Dashboard</h3>
             <p className="ml-4">Python + Bash + MongoDB, log parsing, REST API, MVC</p>
           </div>
         </div>
-      </section>
+        </section>
+      </FadeInSection>
 
       {/* Other Info */}
-      <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-2">
-        <h2 className="text-3xl font-bold mb-4">Other Info</h2>
-        <ul className="list-disc list-inside ml-4 space-y-1">
-          <li>International graduate on Canadian open work permit</li>
-          <li>Recommendation letters available upon request</li>
-        </ul>
-      </section>
+      <FadeInSection>
+        <section className="bg-white p-6 rounded-lg shadow border border-gray-200 space-y-2">
+          <h2 className="text-3xl font-semibold mb-4">Other Info</h2>
+          <ul className="list-disc list-inside ml-4 space-y-1 text-lg">
+            <li>International graduate on Canadian open work permit</li>
+            <li>Recommendation letters available upon request</li>
+          </ul>
+        </section>
+      </FadeInSection>
 
-      {/* Download Button */}
-      <div className="pt-4">
-        <Link
-          href="/resume.pdf"
-          className="inline-block px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition"
-        >
-          Download PDF Resume
-        </Link>
-      </div>
       <ScrollTopButton />
     </div>
   );
