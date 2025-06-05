@@ -1,7 +1,24 @@
+"use client";
+import { useEffect, useState } from "react";
 import FadeInSection from "../components/FadeInSection";
 import { FaLinkedin, FaGithub, FaEnvelope } from "react-icons/fa";
 
 export default function ContactPage() {
+  const fullMessage = "Thanks for visiting!";
+  const [typedText, setTypedText] = useState("");
+
+  useEffect(() => {
+    let index = 0;
+    const interval = setInterval(() => {
+      setTypedText(fullMessage.slice(0, index + 1));
+      index += 1;
+      if (index === fullMessage.length) {
+        clearInterval(interval);
+      }
+    }, 50);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <main className="relative flex items-center justify-center min-h-[calc(100vh-4rem)] bg-[#0f172a] p-6">
       <FadeInSection>
@@ -48,10 +65,8 @@ export default function ContactPage() {
           </FadeInSection>
         </div>
 
-        <p className="text-center text-sm text-gray-400">Thanks for visiting!</p>
+        <p className="text-center text-sm text-gray-300">{typedText}</p>
 
-        <span className="absolute left-4 top-4 text-2xl animate-pulse">💌</span>
-        <span className="absolute right-6 bottom-6 text-2xl animate-float">🚀</span>
         </div>
       </FadeInSection>
     </main>
