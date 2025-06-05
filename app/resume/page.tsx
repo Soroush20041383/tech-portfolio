@@ -174,22 +174,6 @@ export default function ResumePage() {
         </section>
       </FadeInSection>
 
-      {/* Project Highlights */}
-      <FadeInSection>
-        <section className="bg-gray-50 p-6 rounded-lg shadow border border-gray-200 space-y-4">
-          <h2 className="text-3xl font-semibold mb-4">Project Highlights</h2>
-          <div className="space-y-4">
-            <div>
-              <h3 className="text-xl font-semibold">Digital Check Processing (Capstone)</h3>
-              <p className="ml-4">Java + SQL, fraud checks, REST API, testing, CI/CD</p>
-            </div>
-          <div>
-            <h3 className="text-xl font-semibold">System Health Dashboard</h3>
-            <p className="ml-4">Python + Bash + MongoDB, log parsing, REST API, MVC</p>
-          </div>
-        </div>
-        </section>
-      </FadeInSection>
 
       {/* Other Info */}
       <FadeInSection>
