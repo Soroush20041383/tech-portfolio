@@ -48,11 +48,9 @@ export default function ResumePage() {
           className={sectionStyle}
         >
           <h1 className="text-4xl font-bold text-center">Soroush Osanlo</h1>
-          <h2 className="text-xl text-center text-gray-300">Software Developer</h2>
-          <p className="text-lg text-gray-300">
-            Resourceful and adaptable software developer with strengths in
-            full-stack development, problem-solving, and teamwork.
-          </p>
+          <h2 className="text-xl text-center text-gray-300">
+            Computer Programming Graduate | Full-Stack &amp; API Developer
+          </h2>
         </motion.section>
 
         <motion.section
@@ -66,19 +64,9 @@ export default function ResumePage() {
           <h2 className="text-3xl font-semibold">Skills</h2>
           <div className="space-y-4">
             <div>
-              <h3 className="font-semibold">Languages / Frameworks</h3>
+              <h3 className="font-semibold">Languages &amp; Frameworks</h3>
               <div className="flex flex-wrap gap-2 mt-1">
-                {[
-                  'C',
-                  'C++',
-                  'Java',
-                  'Python',
-                  'JS',
-                  'C#',
-                  'Node.js',
-                  '.NET Core',
-                  'Bash',
-                ].map((s) => (
+                {['C#', 'Python', 'TypeScript', '.NET Core', 'Next.js', 'WinForms'].map((s) => (
                   <span
                     key={s}
                     className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
@@ -89,9 +77,9 @@ export default function ResumePage() {
               </div>
             </div>
             <div>
-              <h3 className="font-semibold">Web</h3>
+              <h3 className="font-semibold">Databases &amp; Tools</h3>
               <div className="flex flex-wrap gap-2 mt-1">
-                {['HTML', 'CSS', 'DOM', 'REST APIs', 'AJAX', 'JSON'].map((s) => (
+                {['SQL Server', 'SQLite', 'MongoDB', 'Git', 'PyCharm', 'IIS'].map((s) => (
                   <span
                     key={s}
                     className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
@@ -102,115 +90,9 @@ export default function ResumePage() {
               </div>
             </div>
             <div>
-              <h3 className="font-semibold">DB</h3>
+              <h3 className="font-semibold">Other</h3>
               <div className="flex flex-wrap gap-2 mt-1">
-                {['SQL Server', 'Oracle', 'MySQL', 'MongoDB', 'Stored Procs'].map(
-                  (s) => (
-                    <span
-                      key={s}
-                      className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
-                    >
-                      {s}
-                    </span>
-                  )
-                )}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold">Mobile</h3>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {['Xamarin Forms', 'Ionic (Angular)'].map((s) => (
-                  <span
-                    key={s}
-                    className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold">Apps</h3>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {['Swagger', 'Postman', 'MVC', 'Unit testing'].map((s) => (
-                  <span
-                    key={s}
-                    className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold">DevOps</h3>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {['Git', 'GitHub', 'Actions', 'Jenkins', 'Docker', 'Shell'].map((s) => (
-                  <span
-                    key={s}
-                    className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold">OS</h3>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {['Windows', 'Linux/Unix'].map((s) => (
-                  <span
-                    key={s}
-                    className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold">Tools</h3>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {['Jira', 'Confluence', 'Teams', 'SharePoint', 'Zoom'].map((s) => (
-                  <span
-                    key={s}
-                    className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold">Project Mgmt</h3>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {['PMI', 'Gantt', 'MS Project'].map((s) => (
-                  <span
-                    key={s}
-                    className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold">AI</h3>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {['Prompt engineering', 'ethics', 'tools'].map((s) => (
-                  <span
-                    key={s}
-                    className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
-                  >
-                    {s}
-                  </span>
-                ))}
-              </div>
-            </div>
-            <div>
-              <h3 className="font-semibold">Communication</h3>
-              <div className="flex flex-wrap gap-2 mt-1">
-                {['Reports', 'flowcharts', 'inclusive writing'].map((s) => (
+                {['REST APIs', 'Docker', 'Unit Testing', 'OOP', 'Linux'].map((s) => (
                   <span
                     key={s}
                     className="bg-gray-100 text-gray-800 px-3 py-1 rounded-full shadow-sm text-sm"
@@ -235,24 +117,41 @@ export default function ResumePage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-semibold">
-                SAT Tutor – Webtree Academy, Toronto, ON
+                Full-Stack Developer Intern – Seneca Polytechnic, Toronto, ON
               </h3>
-              <p className="text-sm text-gray-400">June 2023 – September 2023</p>
+              <p className="text-sm text-gray-400">May 2024 – Aug 2024</p>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>One-on-one SAT tutoring, score improved from 800 to 1300+</li>
-                <li>Study plan: time management, anxiety reduction, critical reading</li>
-                <li>Targeted SAT grammar/problem-solving lessons</li>
+                <li>Built web portals with React and .NET APIs</li>
+                <li>Implemented CI/CD pipelines using GitHub Actions</li>
+                <li>Wrote automated tests for REST endpoints</li>
               </ul>
             </div>
             <div>
               <h3 className="text-xl font-semibold">
-                Tutor – Webtree Academy, Toronto, ON
+                SAT Tutor – Webtree Academy, Toronto, ON
               </h3>
-              <p className="text-sm text-gray-400">Nov 2022 – June 2023</p>
+              <p className="text-sm text-gray-400">Jun 2023 – Sep 2023</p>
               <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>Tutored 10+ students in Advanced Functions, Calculus, Biology, etc.</li>
-                <li>Helped students get into UofT, TMU, George Brown</li>
-                <li>Used PyCharm, Google Classroom, personalized lesson plans</li>
+                <li>Mentored students to raise SAT scores dramatically</li>
+                <li>Designed custom study plans with Python scripts</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">
+                Computer Science Tutor – Webtree Academy, Toronto, ON
+              </h3>
+              <p className="text-sm text-gray-400">Nov 2022 – Jun 2023</p>
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+                <li>Coached 10+ students in calculus and data structures</li>
+                <li>Introduced debugging techniques with PyCharm</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">Freelance Web Developer – Remote</h3>
+              <p className="text-sm text-gray-400">2021 – Present</p>
+              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
+                <li>Built responsive sites with Next.js and Tailwind</li>
+                <li>Integrated third-party APIs for e-commerce clients</li>
               </ul>
             </div>
           </div>
@@ -267,15 +166,23 @@ export default function ResumePage() {
           className={sectionStyle}
         >
           <h2 className="text-3xl font-semibold">Education</h2>
-          <div>
-            <h3 className="text-xl font-semibold">
-              Seneca Polytechnic – Computer Programming Diploma
-            </h3>
-            <p className="text-sm text-gray-400">Graduated Dec 2024 | GPA: 3.8</p>
-            <ul className="list-disc list-inside ml-4 mt-2 space-y-1 text-lg">
-              <li>Specialized in Java, SQL optimization, and system analysis</li>
-              <li>Built REST APIs, practiced Agile, fixed client-server issues</li>
-            </ul>
+          <div className="space-y-6">
+            <div>
+              <h3 className="text-xl font-semibold">
+                Seneca Polytechnic – Computer Programming Diploma
+              </h3>
+              <p className="text-sm text-gray-400">GPA: 3.8 | Valedictorian</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">Webtree Academy – OSSD</h3>
+              <p className="text-sm text-gray-400">GPA: 4.0</p>
+            </div>
+            <div>
+              <h3 className="text-xl font-semibold">
+                Allameh Helli School (NODET) – Math &amp; Physics
+              </h3>
+              <p className="text-sm text-gray-400">Valedictorian</p>
+            </div>
           </div>
         </motion.section>
 
@@ -289,11 +196,11 @@ export default function ResumePage() {
         >
           <h2 className="text-3xl font-semibold">Certifications</h2>
           <ul className="list-disc list-inside ml-4 space-y-1 text-lg">
-            <li>AWS Certified Cloud Practitioner</li>
-            <li>Microsoft Azure Fundamentals</li>
-            <li>CompTIA A+</li>
-            <li>Google Data Analytics</li>
-            <li>Certified ScrumMaster</li>
+            <li>LangGraph Quickstart</li>
+            <li>TESOL Certification</li>
+            <li>Introduction to Python Programming</li>
+            <li>Intermediate Python</li>
+            <li>Google Data Analytics (in progress)</li>
           </ul>
         </motion.section>
 
@@ -307,11 +214,11 @@ export default function ResumePage() {
         >
           <h2 className="text-3xl font-semibold">Courses</h2>
           <ul className="list-disc list-inside ml-4 space-y-1 text-lg">
-            <li>Data Structures & Algorithms</li>
-            <li>Web Development Bootcamp</li>
-            <li>Database Design</li>
-            <li>Cloud Computing Fundamentals</li>
-            <li>Agile Project Management</li>
+            <li>C++ Programming</li>
+            <li>Web Development</li>
+            <li>Database Management</li>
+            <li>Software Testing</li>
+            <li>Project Management</li>
           </ul>
         </motion.section>
 
@@ -326,16 +233,17 @@ export default function ResumePage() {
           <h2 className="text-3xl font-semibold">Languages &amp; Tools</h2>
           <div className="grid md:grid-cols-2 gap-4">
             <ul className="list-disc list-inside space-y-1 text-lg">
-              <li>English: Native</li>
-              <li>French: Beginner</li>
-              <li>Persian: Native</li>
-              <li>Italian: Intermediate</li>
-              <li>Arabic: Intermediate</li>
+              <li>English</li>
+              <li>Persian</li>
+              <li>French</li>
+              <li>Arabic</li>
+              <li>Italian</li>
             </ul>
             <ul className="list-disc list-inside space-y-1 text-lg">
               <li>Git &amp; GitHub</li>
-              <li>Docker &amp; Kubernetes</li>
-              <li>Visual Studio Code</li>
+              <li>PyCharm</li>
+              <li>IIS &amp; Docker</li>
+              <li>Visual Studio</li>
               <li>Linux / Bash</li>
             </ul>
           </div>
