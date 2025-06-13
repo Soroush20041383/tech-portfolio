@@ -109,17 +109,6 @@ export default function ResumePage() {
           <div className="space-y-6">
             <div>
               <h3 className="text-xl font-semibold">
-                Full-Stack Developer Intern – Seneca Polytechnic, Toronto, ON
-              </h3>
-              <p className="text-sm text-gray-400">May 2024 – Aug 2024</p>
-              <ul className="list-disc list-inside ml-4 mt-2 space-y-1">
-                <li>Built web portals using React, TypeScript, and .NET APIs</li>
-                <li>Integrated RESTful services and CI/CD pipelines (GitHub Actions)</li>
-                <li>Wrote unit tests to validate core business logic</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold">
                 Freelance .NET Developer – LimeOrder (Remote)
               </h3>
               <p className="text-sm text-gray-400">Apr 2025 – May 2025</p>
