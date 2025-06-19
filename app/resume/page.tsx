@@ -52,11 +52,6 @@ export default function ResumePage() {
           <h2 className="text-xl text-center text-gray-300">
             Associate Software Developer • Full-Stack & API Specialist
           </h2>
-          <p className="text-center text-gray-400 text-sm">
-            Thornhill, ON • +1 (437) 556-6361 • soroush.osanlo@gmail.com •{' '}
-            <a className="underline" href="https://linkedin.com/in/">LinkedIn</a> •{' '}
-            <a className="underline" href="https://github.com/">GitHub</a>
-          </p>
           <p className="text-md text-center text-gray-400 max-w-3xl mx-auto mt-4">
             Motivated developer with hands-on experience delivering scalable .NET Core / SQL Server APIs,
             WinForms clients, and responsive React-based UIs. Passionate about clean code, rigorous
