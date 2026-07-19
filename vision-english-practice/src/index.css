@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;600;700;800&family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=JetBrains+Mono:wght@500&display=swap");
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Lora", "Vazirmatn", serif;
+  --font-body: "Vazirmatn", "Lora", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Schoolbook / notebook palette — deliberately not "AI cream + terracotta" */
+  --color-paper: #f6f1e4;
+  --color-paper-line: #d8cfb0;
+  --color-margin: #b23a48;
+  --color-ink: #202a2f;
+  --color-ink-soft: #46524f;
+  --color-chalk: #24463a;
+  --color-chalk-dark: #173026;
+  --color-chalk-light: #3d6b58;
+  --color-mustard: #c98a2e;
+  --color-mustard-light: #e7c988;
+  --color-correct: #3f7d58;
+  --color-correct-bg: #e4efe2;
+  --color-incorrect: #a5333f;
+  --color-incorrect-bg: #f6e3e1;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--color-paper);
+  color: var(--color-ink);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100dvh;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Ruled-notebook-paper background used on quiz/reading surfaces */
+.paper-ruled {
+  background-color: var(--color-paper);
+  background-image: repeating-linear-gradient(
+    to bottom,
+    transparent,
+    transparent 2.35rem,
+    var(--color-paper-line) 2.35rem,
+    var(--color-paper-line) calc(2.35rem + 1px)
+  );
+  background-position: 0 0.6rem;
+}
+
+.paper-margin {
+  border-inline-start: 2px solid var(--color-margin);
+}
+
+.ink-underline {
+  text-decoration-line: underline;
+  text-decoration-color: var(--color-mustard);
+  text-decoration-thickness: 3px;
+  text-underline-offset: 4px;
+}
+
+::selection {
+  background: var(--color-mustard-light);
+  color: var(--color-chalk-dark);
+}
+
+[dir="rtl"] {
+  font-feature-settings: "ss01";
+}
