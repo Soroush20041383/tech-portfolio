@@ -21,9 +21,9 @@ export const CURRICULUM = {
     book: "Vision 1",
     lessons: [
       { id: 1, title: "Saving Nature", ready: true },
-      { id: 2, title: "Lesson 2", ready: false },
-      { id: 3, title: "Lesson 3", ready: false },
-      { id: 4, title: "Lesson 4", ready: false },
+      { id: 2, title: "Wonders of Creation", ready: true },
+      { id: 3, title: "The Value of Knowledge", ready: true },
+      { id: 4, title: "Traveling the World", ready: true },
     ],
   },
   11: {

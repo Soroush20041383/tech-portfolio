@@ -62,12 +62,19 @@ multiple choice, regardless of its exact `format` value.
 
 ## Content status
 
-Grade 10, Lesson 1 ("Saving Nature") ships with the full 100-question bank: 30 vocabulary, 50
-grammar (future tense with `will`/`going to`, error correction, wh-question formation,
-transformation), 10 reading-comprehension, and 10 mixed-review questions — 80 konkur-style / 20
-final-style, matching the project brief's ratio. Every MCQ-style answer has been checked against
-its `options[]`. Lessons 2–4 (grade 10) and all of grades 11–12 are stubbed as "coming soon" in
-`src/data/curriculum.js` and have no question files yet.
+All four Grade 10 lessons ship with full 100-question banks (400 questions total), each split 30
+vocabulary / 50 grammar / 10 reading-comprehension / 10 mixed-review, 80 konkur-style / 20
+final-style, matching the project brief's ratio. Every MCQ-style answer has been checked
+programmatically against its `options[]`, and question IDs are confirmed unique across all four
+files.
+
+- Lesson 1 — Saving Nature (future tense: `will` / `going to`, error correction, wh-questions)
+- Lesson 2 — Wonders of Creation (comparative/superlative adjectives, irregular forms, `as...as`)
+- Lesson 3 — The Value of Knowledge (past progressive, reflexive pronouns, action vs. state verbs)
+- Lesson 4 — Traveling the World (modals `can`/`may`/`must`/`should`, prepositions, adverbs of manner)
+
+All of grades 11–12 are still stubbed as "coming soon" in `src/data/curriculum.js` and have no
+question files yet.
 
 ## Adding a new lesson
 
